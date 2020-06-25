@@ -3972,7 +3972,6 @@ class Player extends Human implements CommandSender, ChunkLoader, IPlayer{
 
 	/**
 	 * Returns the window ID which the inventory has for this player, or -1 if the window is not open to the player.
-	 * @deprecated
 	 */
 	public function getWindowId(Inventory $inventory) : int{
 		return $this->windows[spl_object_hash($inventory)] ?? ContainerIds::NONE;
